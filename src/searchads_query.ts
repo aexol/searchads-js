@@ -45,6 +45,18 @@ export class QueryBase<T> implements ISearchAdsQuery<QueryBase<T>> {
   public get request(): Request {
     return new Request(`${this.endpoint.endpoint}`, this.endpoint.auth);
   }
+  public delete(): Promise<any> {
+    return this.request.delete();
+  }
+  public get(): Promise<any> {
+    return this.request.get();
+  }
+  public post(data: any): Promise<any> {
+    return this.request.post(data);
+  }
+  public put(data: any): Promise<any> {
+    return this.request.put(data);
+  }
 }
 
 export default newEndpoint;

@@ -21,7 +21,7 @@ export class CampaignsQuery extends QueryBase<CampaignsQuery> {
   public get find() {
     return findEndpoint(this.endpoint);
   }
-  [s: string]: ISearchAdsQuery<CampaignQuery|FindQuery>|IEndpoint|Request;
+  [s: string]: any
 }
 
 class Campaigns extends EndpointLeaf {

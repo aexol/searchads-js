@@ -21,7 +21,7 @@ export class AdGroupsQuery extends QueryBase<AdGroupsQuery> {
   public get find() {
     return findEndpoint(this.endpoint);
   }
-  [s: string]: ISearchAdsQuery<AdGroupQuery|FindQuery>|IEndpoint|Request;
+  [s: string]: any
 }
 
 class AdGroups extends EndpointLeaf {
