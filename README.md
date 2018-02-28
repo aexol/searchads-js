@@ -58,12 +58,13 @@ SearchAds API
 import Api from '@aexol/searchads-js'
 import fs from 'fs'
 
-const auth = {pem: fs.readFileSync('cert.pem',
+const auth = {
+  pem: fs.readFileSync('cert.pem'),
   key: fs.readFileSync('cert.key'),
   orgId: 1
 }
 const api = new Api(auth)
-api.campaigns.get().then(console.log)
+api.campaigns.get().then(console.log).catch(e => console.log(e.message))
 ```
 <a name="AclQuery"></a>
 
@@ -78,6 +79,7 @@ Queries on `acl` endpoint in SearchAds API.
     * [.get()](#Request+get) ⇒ <code>Promise</code>
     * [.post(data)](#Request+post) ⇒ <code>Promise</code>
     * [.put(data)](#Request+put) ⇒ <code>Promise</code>
+    * [.url()](#Request+url) ⇒ <code>String</code>
 
 <a name="Request+delete"></a>
 
@@ -113,6 +115,12 @@ Put on endpoint.
 | --- | --- | --- |
 | data | <code>any</code> | put payload |
 
+<a name="Request+url"></a>
+
+### aclQuery.url() ⇒ <code>String</code>
+Get endpoint url
+
+**Kind**: instance method of [<code>AclQuery</code>](#AclQuery)  
 <a name="AdGroupQuery"></a>
 
 ## AdGroupQuery ⇐ [<code>Request</code>](#Request)
@@ -126,6 +134,7 @@ Make request on `adgroups/${id}` endpoint.
     * [.get()](#Request+get) ⇒ <code>Promise</code>
     * [.post(data)](#Request+post) ⇒ <code>Promise</code>
     * [.put(data)](#Request+put) ⇒ <code>Promise</code>
+    * [.url()](#Request+url) ⇒ <code>String</code>
 
 <a name="Request+delete"></a>
 
@@ -161,6 +170,12 @@ Put on endpoint.
 | --- | --- | --- |
 | data | <code>any</code> | put payload |
 
+<a name="Request+url"></a>
+
+### adGroupQuery.url() ⇒ <code>String</code>
+Get endpoint url
+
+**Kind**: instance method of [<code>AdGroupQuery</code>](#AdGroupQuery)  
 <a name="AdGroupsQuery"></a>
 
 ## AdGroupsQuery ⇐ [<code>Request</code>](#Request)
@@ -181,6 +196,7 @@ Make request on `adgroups` endpoint.
     * [.get()](#Request+get) ⇒ <code>Promise</code>
     * [.post(data)](#Request+post) ⇒ <code>Promise</code>
     * [.put(data)](#Request+put) ⇒ <code>Promise</code>
+    * [.url()](#Request+url) ⇒ <code>String</code>
 
 <a name="Request+delete"></a>
 
@@ -216,6 +232,12 @@ Put on endpoint.
 | --- | --- | --- |
 | data | <code>any</code> | put payload |
 
+<a name="Request+url"></a>
+
+### adGroupsQuery.url() ⇒ <code>String</code>
+Get endpoint url
+
+**Kind**: instance method of [<code>AdGroupsQuery</code>](#AdGroupsQuery)  
 <a name="Api"></a>
 
 ## Api
@@ -256,6 +278,7 @@ Make request on `campaigns/${id}` endpoint.
     * [.get()](#Request+get) ⇒ <code>Promise</code>
     * [.post(data)](#Request+post) ⇒ <code>Promise</code>
     * [.put(data)](#Request+put) ⇒ <code>Promise</code>
+    * [.url()](#Request+url) ⇒ <code>String</code>
 
 <a name="Request+delete"></a>
 
@@ -291,6 +314,12 @@ Put on endpoint.
 | --- | --- | --- |
 | data | <code>any</code> | put payload |
 
+<a name="Request+url"></a>
+
+### campaignQuery.url() ⇒ <code>String</code>
+Get endpoint url
+
+**Kind**: instance method of [<code>CampaignQuery</code>](#CampaignQuery)  
 <a name="CampaignsQuery"></a>
 
 ## CampaignsQuery ⇐ [<code>Request</code>](#Request)
@@ -311,6 +340,7 @@ Make request on `campaigns` endpoint.
     * [.get()](#Request+get) ⇒ <code>Promise</code>
     * [.post(data)](#Request+post) ⇒ <code>Promise</code>
     * [.put(data)](#Request+put) ⇒ <code>Promise</code>
+    * [.url()](#Request+url) ⇒ <code>String</code>
 
 <a name="Request+delete"></a>
 
@@ -346,6 +376,12 @@ Put on endpoint.
 | --- | --- | --- |
 | data | <code>any</code> | put payload |
 
+<a name="Request+url"></a>
+
+### campaignsQuery.url() ⇒ <code>String</code>
+Get endpoint url
+
+**Kind**: instance method of [<code>CampaignsQuery</code>](#CampaignsQuery)  
 <a name="FindQuery"></a>
 
 ## FindQuery ⇐ [<code>Request</code>](#Request)
@@ -359,6 +395,7 @@ Make request on `find` endpoint.
     * [.get()](#Request+get) ⇒ <code>Promise</code>
     * [.post(data)](#Request+post) ⇒ <code>Promise</code>
     * [.put(data)](#Request+put) ⇒ <code>Promise</code>
+    * [.url()](#Request+url) ⇒ <code>String</code>
 
 <a name="Request+delete"></a>
 
@@ -394,6 +431,12 @@ Put on endpoint.
 | --- | --- | --- |
 | data | <code>any</code> | put payload |
 
+<a name="Request+url"></a>
+
+### findQuery.url() ⇒ <code>String</code>
+Get endpoint url
+
+**Kind**: instance method of [<code>FindQuery</code>](#FindQuery)  
 <a name="Request"></a>
 
 ## Request
@@ -414,6 +457,7 @@ Request to SearchAds API.
     * [.get()](#Request+get) ⇒ <code>Promise</code>
     * [.post(data)](#Request+post) ⇒ <code>Promise</code>
     * [.put(data)](#Request+put) ⇒ <code>Promise</code>
+    * [.url()](#Request+url) ⇒ <code>String</code>
 
 <a name="Request+delete"></a>
 
@@ -449,6 +493,12 @@ Put on endpoint.
 | --- | --- | --- |
 | data | <code>any</code> | put payload |
 
+<a name="Request+url"></a>
+
+### request.url() ⇒ <code>String</code>
+Get endpoint url
+
+**Kind**: instance method of [<code>Request</code>](#Request)  
 <a name="QueryBase"></a>
 
 ## QueryBase
