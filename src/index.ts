@@ -1,6 +1,6 @@
 /**
- * Common middlewares for syncano.
- * @module @aexol/syncano-middleware-common
+ * SearchAds API
+ * @module @aexol/searchads-js
  */
 
 import Api from './api';
