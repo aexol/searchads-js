@@ -12,8 +12,8 @@ npm install @aexol/searchads-js
 ## Modules
 
 <dl>
-<dt><a href="#module_@aexol/syncano-middleware-common">@aexol/syncano-middleware-common</a></dt>
-<dd><p>Common middlewares for syncano.</p>
+<dt><a href="#module_@aexol/searchads-js">@aexol/searchads-js</a></dt>
+<dd><p>SearchAds API</p>
 </dd>
 </dl>
 
@@ -31,10 +31,10 @@ npm install @aexol/searchads-js
 <dd></dd>
 </dl>
 
-<a name="module_@aexol/syncano-middleware-common"></a>
+<a name="module_@aexol/searchads-js"></a>
 
-## @aexol/syncano-middleware-common
-Common middlewares for syncano.
+## @aexol/searchads-js
+SearchAds API
 
 <a name="Acl"></a>
 
