@@ -3,25 +3,55 @@ import nodeFetch, {Headers} from 'node-fetch';
 import authFactory, { IAuthInfo , ICertAuth } from './auth';
 
 const apiBase = 'https://api.searchads.apple.com/api/v1/';
+
+/**
+ * Request to SearchAds API.
+ *
+ * @property {String} endpoint Search ads api endpoint.
+ * @property {ICertAuth} auth Search ads api auth.
+ * @property {Headers} headers Search ads api request headers.
+ */
 export class Request {
   public auth: IAuthInfo;
   constructor(public endpoint: string, auth: ICertAuth, public headers?: Headers) {
     this.auth = authFactory(auth);
   }
 
+  /**
+   *  Delete on endpoint.
+   *
+   * @returns {Promise<any>}
+   */
   public delete(): Promise<any> {
     return this.fetch({method: 'DELETE'});
   }
 
+  /**
+   *  Get on endpoint.
+   *
+   * @returns {Promise<any>}
+   */
   public get(): Promise<any> {
     return this.fetch({method: 'GET'});
   }
 
+  /**
+   *  Post on endpoint.
+   *
+   * @param {any} data post payload
+   * @returns {Promise<any>}
+   */
   public post(data: any): Promise<any> {
     const body = this.toJson(data);
     return this.fetch({body, method: 'POST'});
   }
 
+  /**
+   *  Put on endpoint.
+   *
+   * @param {any} data put payload
+   * @returns {Promise<any>}
+   */
   public put(data: any): Promise<any> {
     const body = this.toJson(data);
     return this.fetch({body, method: 'PUT'});

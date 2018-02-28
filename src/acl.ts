@@ -8,12 +8,14 @@ import newEndpoint,
   QueryBase,
 } from './searchads_query';
 
+/**
+ * Queries on `acl` endpoint in SearchAds API.
+ *
+ * @augments Request
+ */
 export class AclQuery extends QueryBase<AclQuery> {}
 
-/**
- * Get ACL from SearchAds API for this auth.
- */
-export class Acl extends EndpointLeaf {
+class Acl extends EndpointLeaf {
   protected leafEndpoint = 'acl';
 }
 

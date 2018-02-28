@@ -1,5 +1,4 @@
 import { ICertAuth } from './auth';
-import {Campaigns} from './campaigns';
 import { Request } from './request';
 import newEndpoint,
 {
@@ -9,6 +8,11 @@ import newEndpoint,
   QueryBase,
 } from './searchads_query';
 
+/**
+ * Make request on `find` endpoint.
+ *
+ * @augments Request
+ */
 export class FindQuery extends QueryBase<FindQuery> {}
 
 export class Find extends EndpointLeaf {

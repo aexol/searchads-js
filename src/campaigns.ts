@@ -10,6 +10,13 @@ import newEndpoint,
   QueryBase,
 } from './searchads_query';
 
+/**
+ * Make request on `campaigns` endpoint.
+ *
+ * @property {FindQuery} find Get find for campaigns
+ * @property {number} [id] Get campaign by id.
+ * @augments Request
+ */
 export class CampaignsQuery extends QueryBase<CampaignsQuery> {
   public get find() {
     return findEndpoint(this.endpoint);
@@ -17,7 +24,7 @@ export class CampaignsQuery extends QueryBase<CampaignsQuery> {
   [s: string]: ISearchAdsQuery<CampaignQuery|FindQuery>|IEndpoint|Request;
 }
 
-export class Campaigns extends EndpointLeaf {
+class Campaigns extends EndpointLeaf {
   protected leafEndpoint = 'campaigns';
 }
 

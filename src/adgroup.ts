@@ -8,14 +8,14 @@ import newEndpoint,
     QueryBase,
 } from './searchads_query';
 
+/**
+ * Make request on `adgroups/${id}` endpoint.
+ *
+ * @augments Request
+ */
 export class AdGroupQuery extends QueryBase<AdGroupQuery> {}
 
-export class AdGroup  extends EndpointLeaf {
-  /**
-   *
-   * @param prev Parent endpoint
-   * @param leafEndpoint  AdGroup id.
-   */
+class AdGroup  extends EndpointLeaf {
   constructor(prev: IEndpoint, protected leafEndpoint: number) {super(prev);}
 }
 

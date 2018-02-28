@@ -8,17 +8,17 @@ import newEndpoint,
 } from './searchads_query';
 
 /**
- * Main api class.
+ * @description SearchAds API.
  *
- * @property {Campaigns} campaigns Campaigns endpoint in API.
- * @property {Acl} acl ACL endpoint in API.
-*/
+ * @property {CampaignsQuery} campaigns Instance of {CampaignsQuery} for this api obejct.
+ * @property {AclQuery} acl Instance of {AclQuery} for this api object.
+ */
 export default class Api implements IEndpoint, ISearchAdsQuery<Api> {
   /**
-   *
-   * @param auth SearchAds API auth certificates. Either object
-   *  `{pem: <Buffer|String>, key: <Buffer|String>` or
-   *  `{pkcs12: <Buffer|String>, passphrase: <String>`
+   * @description Constructor taking SearchAds API auth. Auth must be
+   * an object with `{pem: <Buffer|String>, key: <Buffer|String>` or
+   * `{pkcs12: <Buffer|String>, passphrase: <String>`
+   * @param auth SearchAds API auth certificates.
    */
   constructor(public auth: ICertAuth) {}
   public get endpoint(): string {

@@ -33,8 +33,14 @@ export abstract class EndpointLeaf implements IEndpoint {
   }
 }
 
+/**
+ * Base query with request.
+ */
 export class QueryBase<T> implements ISearchAdsQuery<QueryBase<T>> {
   constructor(public endpoint: IEndpoint) {}
+  /**
+   * @property request returns {Request} object for this endpoint.
+   */
   public get request(): Request {
     return new Request(`${this.endpoint.endpoint}`, this.endpoint.auth);
   }
