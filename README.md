@@ -53,6 +53,15 @@ npm install @aexol/searchads-js
 ## @aexol/searchads-js
 SearchAds API
 
+**Example**  
+```javascript
+import Api from '@aexol/searchads-js'
+
+const auth = {pem: '', key: '', orgId: 1}
+const api = new Api(auth)
+const campaigns = await api.campaigns.get()
+console.log(campaigns)
+```
 <a name="AclQuery"></a>
 
 ## AclQuery ⇐ [<code>Request</code>](#Request)
