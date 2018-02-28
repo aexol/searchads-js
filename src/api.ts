@@ -7,6 +7,12 @@ import newEndpoint,
   ISearchAdsQuery,
 } from './searchads_query';
 
+/**
+ * Main api class.
+ *
+ * @property {Campaigns} campaigns Campaigns endpoint in API.
+ * @property {Acl} acl ACL endpoint in API.
+*/
 export default class Api implements IEndpoint, ISearchAdsQuery<Api> {
   /**
    *

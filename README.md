@@ -26,7 +26,8 @@ npm install @aexol/searchads-js
 <dt><a href="#AdGroup">AdGroup</a></dt>
 <dd></dd>
 <dt><a href="#Api">Api</a></dt>
-<dd></dd>
+<dd><p>Main api class.</p>
+</dd>
 <dt><a href="#Campaign">Campaign</a></dt>
 <dd></dd>
 </dl>
@@ -58,7 +59,16 @@ Get ACL from SearchAds API for this auth.
 <a name="Api"></a>
 
 ## Api
+Main api class.
+
 **Kind**: global class  
+**Properties**
+
+| Name | Type | Description |
+| --- | --- | --- |
+| campaigns | <code>Campaigns</code> | Campaigns endpoint in API. |
+| acl | [<code>Acl</code>](#Acl) | ACL endpoint in API. |
+
 <a name="new_Api_new"></a>
 
 ### new Api(auth)
