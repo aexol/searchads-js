@@ -1,0 +1,55 @@
+{
+  "name": "@aexol/searchads-js",
+  "version": "0.1.0",
+  "description": "searchads api wrapper",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "build": "rm -rf lib && tsc",
+    "prepare": "npm run build",
+    "prepack": "npm run test && npm run docs",
+    "test": "jest",
+    "docs": "jsdoc2md -t jsdoc2md/README.hbs lib/*.js > README.md; echo"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/Aexol/searchads-js.git"
+  },
+  "keywords": [
+    "searchads"
+  ],
+  "author": "Aexol",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://gitlab.com/Aexol/searchads-js/issues"
+  },
+  "homepage": "https://gitlab.com/Aexol/searchads-js#README",
+  "devDependencies": {
+    "@types/jest": "^22.1.3",
+    "@types/lodash.get": "^4.4.3",
+    "@types/node-fetch": "^1.6.7",
+    "jest": "^22.4.2",
+    "jsdoc-to-markdown": "^4.0.1",
+    "ts-jest": "^22.4.0",
+    "ts-node": "^5.0.0",
+    "tslint": "^5.9.1",
+    "typescript": "^2.7.2"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ]
+  },
+  "dependencies": {
+    "node-fetch": "^2.0.0"
+  }
+}
