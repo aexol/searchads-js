@@ -13,7 +13,7 @@ const apiBase = 'https://api.searchads.apple.com/api/v1/';
  */
 export class Request {
   public auth: IAuthInfo;
-  constructor(public endpoint: string, auth: ICertAuth, public headers?: Headers) {
+  constructor(public endpoint: string, auth: ICertAuth, public headers?: {[k: string]: string}) {
     this.auth = authFactory(auth);
   }
 
@@ -57,6 +57,15 @@ export class Request {
     return this.fetch({body, method: 'PUT'});
   }
 
+  /**
+   *  Get endpoint url
+   *
+   * @returns {String}
+   */
+  public url() {
+    return `${apiBase}${this.endpoint}`;
+  }
+
   protected async fetch(
     {body, method = 'POST'}: {body?: any, method: string},
   ): Promise<any> {
@@ -70,17 +79,17 @@ export class Request {
       ...certs,
     });
     if (!this.headers) {
-      this.headers = new Headers();
+      this.headers = {};
     }
     let authHeader = `orgId=${orgId}`;
-    if (this.headers.has('Authorization')) {
-      authHeader = `${this.headers.get('Authorization')} ${authHeader}`;
+    if (this.headers.Authorization) {
+      authHeader = `${this.headers.Authorization} ${authHeader}`;
     }
-    this.headers.set('Authorization', authHeader);
-    if (!this.headers.has('Content-Type')) {
-      this.headers.set('Content-Type', 'application/json');
+    this.headers.Authorization = authHeader;
+    if (!this.headers['Content-Type']) {
+      this.headers['Content-Type'] = 'application/json';
     }
-    return nodeFetch(`${apiBase}/${this.endpoint}`,
+    return nodeFetch(this.url(),
       {
       agent,
       body,
@@ -91,7 +100,7 @@ export class Request {
 
   private toJson(data: any): any {
     return !this.headers ||
-            this.headers.get('Content-Type') === 'application/json' ?
+            this.headers['Content-Type'] === 'application/json' ?
                   JSON.stringify(data) : data;
   }
 }

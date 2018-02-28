@@ -17,7 +17,8 @@ function newEndpoint<T extends ISearchAdsQuery<T>,
       if (target[prop]) {
         return target[prop];
       }
-      return target.request[prop];
+      const req = target.request;
+      return (...args: any[]) => req[prop](...args);
     },
   });
 }
