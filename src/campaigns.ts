@@ -14,7 +14,7 @@ import newEndpoint,
  * Make request on `campaigns` endpoint.
  *
  * @property {FindQuery} find Get find for campaigns
- * @property {number} [id] Get campaign by id.
+ * @property {Campaign} [id] Get campaign by id.
  * @augments Request
  */
 export class CampaignsQuery extends QueryBase<CampaignsQuery> {

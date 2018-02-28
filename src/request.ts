@@ -20,7 +20,7 @@ export class Request {
   /**
    *  Delete on endpoint.
    *
-   * @returns {Promise<any>}
+   * @returns {Promise}
    */
   public delete(): Promise<any> {
     return this.fetch({method: 'DELETE'});
@@ -29,7 +29,7 @@ export class Request {
   /**
    *  Get on endpoint.
    *
-   * @returns {Promise<any>}
+   * @returns {Promise}
    */
   public get(): Promise<any> {
     return this.fetch({method: 'GET'});
@@ -39,7 +39,7 @@ export class Request {
    *  Post on endpoint.
    *
    * @param {any} data post payload
-   * @returns {Promise<any>}
+   * @returns {Promise}
    */
   public post(data: any): Promise<any> {
     const body = this.toJson(data);
@@ -50,7 +50,7 @@ export class Request {
    *  Put on endpoint.
    *
    * @param {any} data put payload
-   * @returns {Promise<any>}
+   * @returns {Promise}
    */
   public put(data: any): Promise<any> {
     const body = this.toJson(data);

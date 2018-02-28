@@ -14,7 +14,7 @@ import newEndpoint,
  * Make request on `adgroups` endpoint.
  *
  * @property {FindQuery} find Get find for adgroups.
- * @property {number} [id] Get adgroup by id.
+ * @property {AdGroup} [id] Get adgroup by id.
  * @augments Request
  */
 export class AdGroupsQuery extends QueryBase<AdGroupsQuery> {

@@ -62,26 +62,26 @@ Queries on `acl` endpoint in SearchAds API.
 **Extends**: [<code>Request</code>](#Request)  
 
 * [AclQuery](#AclQuery) ⇐ [<code>Request</code>](#Request)
-    * [.delete()](#Request+delete) ⇒ <code>Promise.&lt;any&gt;</code>
-    * [.get()](#Request+get) ⇒ <code>Promise.&lt;any&gt;</code>
-    * [.post(data)](#Request+post) ⇒ <code>Promise.&lt;any&gt;</code>
-    * [.put(data)](#Request+put) ⇒ <code>Promise.&lt;any&gt;</code>
+    * [.delete()](#Request+delete) ⇒ <code>Promise</code>
+    * [.get()](#Request+get) ⇒ <code>Promise</code>
+    * [.post(data)](#Request+post) ⇒ <code>Promise</code>
+    * [.put(data)](#Request+put) ⇒ <code>Promise</code>
 
 <a name="Request+delete"></a>
 
-### aclQuery.delete() ⇒ <code>Promise.&lt;any&gt;</code>
+### aclQuery.delete() ⇒ <code>Promise</code>
 Delete on endpoint.
 
 **Kind**: instance method of [<code>AclQuery</code>](#AclQuery)  
 <a name="Request+get"></a>
 
-### aclQuery.get() ⇒ <code>Promise.&lt;any&gt;</code>
+### aclQuery.get() ⇒ <code>Promise</code>
 Get on endpoint.
 
 **Kind**: instance method of [<code>AclQuery</code>](#AclQuery)  
 <a name="Request+post"></a>
 
-### aclQuery.post(data) ⇒ <code>Promise.&lt;any&gt;</code>
+### aclQuery.post(data) ⇒ <code>Promise</code>
 Post on endpoint.
 
 **Kind**: instance method of [<code>AclQuery</code>](#AclQuery)  
@@ -92,7 +92,7 @@ Post on endpoint.
 
 <a name="Request+put"></a>
 
-### aclQuery.put(data) ⇒ <code>Promise.&lt;any&gt;</code>
+### aclQuery.put(data) ⇒ <code>Promise</code>
 Put on endpoint.
 
 **Kind**: instance method of [<code>AclQuery</code>](#AclQuery)  
@@ -110,26 +110,26 @@ Make request on `adgroups/${id}` endpoint.
 **Extends**: [<code>Request</code>](#Request)  
 
 * [AdGroupQuery](#AdGroupQuery) ⇐ [<code>Request</code>](#Request)
-    * [.delete()](#Request+delete) ⇒ <code>Promise.&lt;any&gt;</code>
-    * [.get()](#Request+get) ⇒ <code>Promise.&lt;any&gt;</code>
-    * [.post(data)](#Request+post) ⇒ <code>Promise.&lt;any&gt;</code>
-    * [.put(data)](#Request+put) ⇒ <code>Promise.&lt;any&gt;</code>
+    * [.delete()](#Request+delete) ⇒ <code>Promise</code>
+    * [.get()](#Request+get) ⇒ <code>Promise</code>
+    * [.post(data)](#Request+post) ⇒ <code>Promise</code>
+    * [.put(data)](#Request+put) ⇒ <code>Promise</code>
 
 <a name="Request+delete"></a>
 
-### adGroupQuery.delete() ⇒ <code>Promise.&lt;any&gt;</code>
+### adGroupQuery.delete() ⇒ <code>Promise</code>
 Delete on endpoint.
 
 **Kind**: instance method of [<code>AdGroupQuery</code>](#AdGroupQuery)  
 <a name="Request+get"></a>
 
-### adGroupQuery.get() ⇒ <code>Promise.&lt;any&gt;</code>
+### adGroupQuery.get() ⇒ <code>Promise</code>
 Get on endpoint.
 
 **Kind**: instance method of [<code>AdGroupQuery</code>](#AdGroupQuery)  
 <a name="Request+post"></a>
 
-### adGroupQuery.post(data) ⇒ <code>Promise.&lt;any&gt;</code>
+### adGroupQuery.post(data) ⇒ <code>Promise</code>
 Post on endpoint.
 
 **Kind**: instance method of [<code>AdGroupQuery</code>](#AdGroupQuery)  
@@ -140,7 +140,7 @@ Post on endpoint.
 
 <a name="Request+put"></a>
 
-### adGroupQuery.put(data) ⇒ <code>Promise.&lt;any&gt;</code>
+### adGroupQuery.put(data) ⇒ <code>Promise</code>
 Put on endpoint.
 
 **Kind**: instance method of [<code>AdGroupQuery</code>](#AdGroupQuery)  
@@ -161,30 +161,30 @@ Make request on `adgroups` endpoint.
 | Name | Type | Description |
 | --- | --- | --- |
 | find | [<code>FindQuery</code>](#FindQuery) | Get find for adgroups. |
-| [id] | <code>number</code> | Get adgroup by id. |
+| [id] | <code>AdGroup</code> | Get adgroup by id. |
 
 
 * [AdGroupsQuery](#AdGroupsQuery) ⇐ [<code>Request</code>](#Request)
-    * [.delete()](#Request+delete) ⇒ <code>Promise.&lt;any&gt;</code>
-    * [.get()](#Request+get) ⇒ <code>Promise.&lt;any&gt;</code>
-    * [.post(data)](#Request+post) ⇒ <code>Promise.&lt;any&gt;</code>
-    * [.put(data)](#Request+put) ⇒ <code>Promise.&lt;any&gt;</code>
+    * [.delete()](#Request+delete) ⇒ <code>Promise</code>
+    * [.get()](#Request+get) ⇒ <code>Promise</code>
+    * [.post(data)](#Request+post) ⇒ <code>Promise</code>
+    * [.put(data)](#Request+put) ⇒ <code>Promise</code>
 
 <a name="Request+delete"></a>
 
-### adGroupsQuery.delete() ⇒ <code>Promise.&lt;any&gt;</code>
+### adGroupsQuery.delete() ⇒ <code>Promise</code>
 Delete on endpoint.
 
 **Kind**: instance method of [<code>AdGroupsQuery</code>](#AdGroupsQuery)  
 <a name="Request+get"></a>
 
-### adGroupsQuery.get() ⇒ <code>Promise.&lt;any&gt;</code>
+### adGroupsQuery.get() ⇒ <code>Promise</code>
 Get on endpoint.
 
 **Kind**: instance method of [<code>AdGroupsQuery</code>](#AdGroupsQuery)  
 <a name="Request+post"></a>
 
-### adGroupsQuery.post(data) ⇒ <code>Promise.&lt;any&gt;</code>
+### adGroupsQuery.post(data) ⇒ <code>Promise</code>
 Post on endpoint.
 
 **Kind**: instance method of [<code>AdGroupsQuery</code>](#AdGroupsQuery)  
@@ -195,7 +195,7 @@ Post on endpoint.
 
 <a name="Request+put"></a>
 
-### adGroupsQuery.put(data) ⇒ <code>Promise.&lt;any&gt;</code>
+### adGroupsQuery.put(data) ⇒ <code>Promise</code>
 Put on endpoint.
 
 **Kind**: instance method of [<code>AdGroupsQuery</code>](#AdGroupsQuery)  
@@ -240,26 +240,26 @@ Make request on `campaigns/${id}` endpoint.
 
 
 * [CampaignQuery](#CampaignQuery) ⇐ [<code>Request</code>](#Request)
-    * [.delete()](#Request+delete) ⇒ <code>Promise.&lt;any&gt;</code>
-    * [.get()](#Request+get) ⇒ <code>Promise.&lt;any&gt;</code>
-    * [.post(data)](#Request+post) ⇒ <code>Promise.&lt;any&gt;</code>
-    * [.put(data)](#Request+put) ⇒ <code>Promise.&lt;any&gt;</code>
+    * [.delete()](#Request+delete) ⇒ <code>Promise</code>
+    * [.get()](#Request+get) ⇒ <code>Promise</code>
+    * [.post(data)](#Request+post) ⇒ <code>Promise</code>
+    * [.put(data)](#Request+put) ⇒ <code>Promise</code>
 
 <a name="Request+delete"></a>
 
-### campaignQuery.delete() ⇒ <code>Promise.&lt;any&gt;</code>
+### campaignQuery.delete() ⇒ <code>Promise</code>
 Delete on endpoint.
 
 **Kind**: instance method of [<code>CampaignQuery</code>](#CampaignQuery)  
 <a name="Request+get"></a>
 
-### campaignQuery.get() ⇒ <code>Promise.&lt;any&gt;</code>
+### campaignQuery.get() ⇒ <code>Promise</code>
 Get on endpoint.
 
 **Kind**: instance method of [<code>CampaignQuery</code>](#CampaignQuery)  
 <a name="Request+post"></a>
 
-### campaignQuery.post(data) ⇒ <code>Promise.&lt;any&gt;</code>
+### campaignQuery.post(data) ⇒ <code>Promise</code>
 Post on endpoint.
 
 **Kind**: instance method of [<code>CampaignQuery</code>](#CampaignQuery)  
@@ -270,7 +270,7 @@ Post on endpoint.
 
 <a name="Request+put"></a>
 
-### campaignQuery.put(data) ⇒ <code>Promise.&lt;any&gt;</code>
+### campaignQuery.put(data) ⇒ <code>Promise</code>
 Put on endpoint.
 
 **Kind**: instance method of [<code>CampaignQuery</code>](#CampaignQuery)  
@@ -291,30 +291,30 @@ Make request on `campaigns` endpoint.
 | Name | Type | Description |
 | --- | --- | --- |
 | find | [<code>FindQuery</code>](#FindQuery) | Get find for campaigns |
-| [id] | <code>number</code> | Get campaign by id. |
+| [id] | <code>Campaign</code> | Get campaign by id. |
 
 
 * [CampaignsQuery](#CampaignsQuery) ⇐ [<code>Request</code>](#Request)
-    * [.delete()](#Request+delete) ⇒ <code>Promise.&lt;any&gt;</code>
-    * [.get()](#Request+get) ⇒ <code>Promise.&lt;any&gt;</code>
-    * [.post(data)](#Request+post) ⇒ <code>Promise.&lt;any&gt;</code>
-    * [.put(data)](#Request+put) ⇒ <code>Promise.&lt;any&gt;</code>
+    * [.delete()](#Request+delete) ⇒ <code>Promise</code>
+    * [.get()](#Request+get) ⇒ <code>Promise</code>
+    * [.post(data)](#Request+post) ⇒ <code>Promise</code>
+    * [.put(data)](#Request+put) ⇒ <code>Promise</code>
 
 <a name="Request+delete"></a>
 
-### campaignsQuery.delete() ⇒ <code>Promise.&lt;any&gt;</code>
+### campaignsQuery.delete() ⇒ <code>Promise</code>
 Delete on endpoint.
 
 **Kind**: instance method of [<code>CampaignsQuery</code>](#CampaignsQuery)  
 <a name="Request+get"></a>
 
-### campaignsQuery.get() ⇒ <code>Promise.&lt;any&gt;</code>
+### campaignsQuery.get() ⇒ <code>Promise</code>
 Get on endpoint.
 
 **Kind**: instance method of [<code>CampaignsQuery</code>](#CampaignsQuery)  
 <a name="Request+post"></a>
 
-### campaignsQuery.post(data) ⇒ <code>Promise.&lt;any&gt;</code>
+### campaignsQuery.post(data) ⇒ <code>Promise</code>
 Post on endpoint.
 
 **Kind**: instance method of [<code>CampaignsQuery</code>](#CampaignsQuery)  
@@ -325,7 +325,7 @@ Post on endpoint.
 
 <a name="Request+put"></a>
 
-### campaignsQuery.put(data) ⇒ <code>Promise.&lt;any&gt;</code>
+### campaignsQuery.put(data) ⇒ <code>Promise</code>
 Put on endpoint.
 
 **Kind**: instance method of [<code>CampaignsQuery</code>](#CampaignsQuery)  
@@ -343,26 +343,26 @@ Make request on `find` endpoint.
 **Extends**: [<code>Request</code>](#Request)  
 
 * [FindQuery](#FindQuery) ⇐ [<code>Request</code>](#Request)
-    * [.delete()](#Request+delete) ⇒ <code>Promise.&lt;any&gt;</code>
-    * [.get()](#Request+get) ⇒ <code>Promise.&lt;any&gt;</code>
-    * [.post(data)](#Request+post) ⇒ <code>Promise.&lt;any&gt;</code>
-    * [.put(data)](#Request+put) ⇒ <code>Promise.&lt;any&gt;</code>
+    * [.delete()](#Request+delete) ⇒ <code>Promise</code>
+    * [.get()](#Request+get) ⇒ <code>Promise</code>
+    * [.post(data)](#Request+post) ⇒ <code>Promise</code>
+    * [.put(data)](#Request+put) ⇒ <code>Promise</code>
 
 <a name="Request+delete"></a>
 
-### findQuery.delete() ⇒ <code>Promise.&lt;any&gt;</code>
+### findQuery.delete() ⇒ <code>Promise</code>
 Delete on endpoint.
 
 **Kind**: instance method of [<code>FindQuery</code>](#FindQuery)  
 <a name="Request+get"></a>
 
-### findQuery.get() ⇒ <code>Promise.&lt;any&gt;</code>
+### findQuery.get() ⇒ <code>Promise</code>
 Get on endpoint.
 
 **Kind**: instance method of [<code>FindQuery</code>](#FindQuery)  
 <a name="Request+post"></a>
 
-### findQuery.post(data) ⇒ <code>Promise.&lt;any&gt;</code>
+### findQuery.post(data) ⇒ <code>Promise</code>
 Post on endpoint.
 
 **Kind**: instance method of [<code>FindQuery</code>](#FindQuery)  
@@ -373,7 +373,7 @@ Post on endpoint.
 
 <a name="Request+put"></a>
 
-### findQuery.put(data) ⇒ <code>Promise.&lt;any&gt;</code>
+### findQuery.put(data) ⇒ <code>Promise</code>
 Put on endpoint.
 
 **Kind**: instance method of [<code>FindQuery</code>](#FindQuery)  
@@ -398,26 +398,26 @@ Request to SearchAds API.
 
 
 * [Request](#Request)
-    * [.delete()](#Request+delete) ⇒ <code>Promise.&lt;any&gt;</code>
-    * [.get()](#Request+get) ⇒ <code>Promise.&lt;any&gt;</code>
-    * [.post(data)](#Request+post) ⇒ <code>Promise.&lt;any&gt;</code>
-    * [.put(data)](#Request+put) ⇒ <code>Promise.&lt;any&gt;</code>
+    * [.delete()](#Request+delete) ⇒ <code>Promise</code>
+    * [.get()](#Request+get) ⇒ <code>Promise</code>
+    * [.post(data)](#Request+post) ⇒ <code>Promise</code>
+    * [.put(data)](#Request+put) ⇒ <code>Promise</code>
 
 <a name="Request+delete"></a>
 
-### request.delete() ⇒ <code>Promise.&lt;any&gt;</code>
+### request.delete() ⇒ <code>Promise</code>
 Delete on endpoint.
 
 **Kind**: instance method of [<code>Request</code>](#Request)  
 <a name="Request+get"></a>
 
-### request.get() ⇒ <code>Promise.&lt;any&gt;</code>
+### request.get() ⇒ <code>Promise</code>
 Get on endpoint.
 
 **Kind**: instance method of [<code>Request</code>](#Request)  
 <a name="Request+post"></a>
 
-### request.post(data) ⇒ <code>Promise.&lt;any&gt;</code>
+### request.post(data) ⇒ <code>Promise</code>
 Post on endpoint.
 
 **Kind**: instance method of [<code>Request</code>](#Request)  
@@ -428,7 +428,7 @@ Post on endpoint.
 
 <a name="Request+put"></a>
 
-### request.put(data) ⇒ <code>Promise.&lt;any&gt;</code>
+### request.put(data) ⇒ <code>Promise</code>
 Put on endpoint.
 
 **Kind**: instance method of [<code>Request</code>](#Request)  
