@@ -4,9 +4,9 @@ export interface IEndpoint {
   auth: ICertAuth;
   endpoint: string;
 }
-export type ISearchAdsQuery<T> = {
-  [P in keyof T]: T[P];
-};
+export interface ISearchAdsQuery<T> {
+  [s: string]: any;
+}
 
 function newEndpoint<T extends ISearchAdsQuery<T>,
                     U extends IEndpoint>( TCreator: {new(e: IEndpoint): T},

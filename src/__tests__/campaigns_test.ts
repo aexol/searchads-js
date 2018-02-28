@@ -6,7 +6,7 @@ describe('campaigns', () => {
   const key = 'key';
   const orgId = 1;
   const auth = {pem, key, orgId};
-  let api;
+  let api: Api;
   beforeEach(() => {
     api = new Api(auth);
   });
